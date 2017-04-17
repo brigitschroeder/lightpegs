@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Light Pegs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+
+    <script>
+
+    </script>
+
+</head>
+
+<body>
+<!-- preload images -->
+<div class="hidden">
+    <script type="text/javascript">
+        var images = new Array();
+        function preload() {
+            for (var i = 0; i < preload.arguments.length; i++) {
+                images[i] = new Image();
+                images[i].src = preload.arguments[i];
+            }
+        }
+        preload(
+            "b-glow.png",
+            "b.png",
+            "g-glow.png",
+            "g.png",
+            "o-glow.png",
+            "o.png",
+            "p-glow.png",
+            "p.png",
+            "r-glow.png",
+            "r.png",
+            "v-glow.png",
+            "v.png",
+            "w-glow.png",
+            "w.png",
+            "y-glow.png",
+            "y.png",
+            "erase-glow.png",
+            "erase.png",
+            "headline4.png",
+            "clear-button.png"
+        );
+    </script>
+</div>
+
+<div class="wrapper">
+    <div id="canvas-wrapper">
+        <canvas width="913" height="573" class="peg" id="peg"></canvas>
+    </div>
+    <div class="pegUI">
+        <div class="pegcontrols">
+            <input id="red" name="color" value="r" checked="checked" type="radio"><label for="red"><span></span></label>
+            <input id="orange" name="color" value="o" type="radio"><label for="orange"><span></span></label>
+            <input id="yellow" name="color" value="y" type="radio"><label for="yellow"><span></span></label>
+            <input id="green" name="color" value="g" type="radio"><label for="green"><span></span></label>
+            <input id="blue" name="color" value="b" type="radio"><label for="blue"><span></span></label>
+            <input id="pink" name="color" value="p" type="radio"><label for="pink"><span></span></label>
+            <input id="purple" name="color" value="v" type="radio"><label for="purple"><span></span></label>
+            <input id="white" name="color" value="w" type="radio"><label for="white"><span></span></label>
+            <input id="erase" name="color" value="n" type="radio"><label for="erase"><span></span></label>
+            <input name="clear" type="button" value="CLEAR">
+        </div>
+    </div>
+</div>
+
+
+<script src="jquery-1.11.3.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

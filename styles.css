@@ -1,0 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* General
+--------------------------------------------------*/
+
+body {
+    font-family: sans-serif;
+    color: #ffffff;
+    background: #333333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.wrapper {
+    max-width: 930px;
+    margin: 20px auto;
+    text-align: center;
+}
+strong {
+    font-weight: bold;
+}
+p, a {
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 12px;
+}
+a {
+    text-decoration: underline;
+}
+a:hover {
+    color: #cccccc;
+}
+
+.canvas-wrapper {
+    display: inline-block;
+}
+canvas {
+    cursor: crosshair;
+    margin: 0 auto;
+    display: block;
+}
+
+h1 img {
+    max-width: 100%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    color: #292321;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input[type="radio"] + label span {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+input[type="radio"]#red + label span { background: url(r.png) no-repeat 5px 5px }
+input[type="radio"]#red:checked + label span { background: url(r.png) no-repeat 5px 5px, url(r-glow.png) no-repeat; }
+
+input[type="radio"]#orange + label span { background: url(o.png) no-repeat 5px 5px }
+input[type="radio"]#orange:checked + label span { background: url(o.png) no-repeat 5px 5px, url(o-glow.png) no-repeat; }
+
+input[type="radio"]#yellow + label span { background: url(y.png) no-repeat 5px 5px }
+input[type="radio"]#yellow:checked + label span { background: url(y.png) no-repeat 5px 5px, url(y-glow.png) no-repeat; }
+
+input[type="radio"]#green + label span { background: url(g.png) no-repeat 5px 5px }
+input[type="radio"]#green:checked + label span { background: url(g.png) no-repeat 5px 5px, url(g-glow.png) no-repeat; }
+
+input[type="radio"]#blue + label span { background: url(b.png) no-repeat 5px 5px }
+input[type="radio"]#blue:checked + label span { background: url(b.png) no-repeat 5px 5px, url(b-glow.png) no-repeat; }
+
+input[type="radio"]#pink + label span { background: url(p.png) no-repeat 5px 5px }
+input[type="radio"]#pink:checked + label span { background: url(p.png) no-repeat 5px 5px, url(p-glow.png) no-repeat; }
+
+input[type="radio"]#purple + label span { background: url(v.png) no-repeat 5px 5px }
+input[type="radio"]#purple:checked + label span { background: url(v.png) no-repeat 5px 5px, url(v-glow.png) no-repeat; }
+
+input[type="radio"]#white + label span { background: url(w.png) no-repeat 5px 5px }
+input[type="radio"]#white:checked + label span { background: url(w.png) no-repeat 5px 5px, url(w-glow.png) no-repeat; }
+
+input[type="radio"]#erase + label span { background: url(erase.png) no-repeat 5px 5px; }
+input[type="radio"]#erase:checked + label span { background: url(erase.png) no-repeat 5px 5px, url(erase-glow.png) no-repeat;; }
+
+/*
+input[type="radio"] + label span { opacity: 0.5; }
+input[type="radio"]:checked + label span { opacity: 1; }
+*/
+/*
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+*/
+a.button,
+input[type="button"] {
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    color: #00e0ff;
+    border: none;
+    padding: 6px 14px;
+    font-size: 16px;
+}
+input[name="clear"] {
+    cursor: pointer;
+    color: #0ee0ff;
+    width: 59px;
+    height: 22px;
+    padding: 0;
+    position: relative;
+    top: 3px;
+}
+.pegcontrols {
+    text-align: center;
+    margin-top: 10px;
+}
